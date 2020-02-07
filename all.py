@@ -5,10 +5,10 @@ print ('\n')
 for x in range(0, 3):   # NOTE colon... whitespace matters; use spaces
     print ("Now x is %i" % (x))
     print ("Now x/3 is %.2f" % (x/3))
-    
+
 for x in range(0, 5):
     print ('{0:2d} {1:3d} {2:4d}'.format(x, x*x, x*x*x))
-   
+
 for x in range(0, 5):
     print ("{0}\t{1}".format(x, x*x*x))
 
@@ -18,7 +18,7 @@ print ('\n')
 #    print ("Infinite loop. x is %i" % (x))
 #    x += 1
 print ('\n===========================\n')
- 
+
 s = '    Python programming    '
 print (len(s))
 print (len(s.strip()))
@@ -33,8 +33,8 @@ print (s.lower().index("p"))
 
 f = open("d.txt","r")  # open file, read-only
 o = open("o.txt", "w") # open file, write
-for line in f:  
-    data = line.strip().split("    ") 
+for line in f:
+    data = line.strip().split("    ")
     print (data)
     print (len(data))
     if len(data) == 6:
